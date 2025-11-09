@@ -1,0 +1,26 @@
+// Tab navigation functionality
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.classList.add("active");
+}
+
+// Optional: Prevent feedback form resubmission with Formspree
+document.addEventListener('DOMContentLoaded', function() {
+    var feedbackForm = document.getElementById('feedbackForm');
+    if (feedbackForm) {
+        feedbackForm.addEventListener('submit', function() {
+            setTimeout(function() {
+                feedbackForm.reset();
+            }, 1000);
+        });
+    }
+});

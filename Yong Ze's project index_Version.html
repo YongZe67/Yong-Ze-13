@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saving Water</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Saving Water</h1>
+        <p class="subtitle">
+            <b>Goal:</b> Promote responsible water use and conservation in daily life.<br>
+            <b>Aim:</b> Help students understand the importance of saving water—what it means, its causes, effects, and possible solutions. Explore each tab to learn more and share your feedback!
+        </p>
+        <nav>
+            <ul>
+                <li><a href="#" class="tablink active" onclick="openTab(event, 'Definition')">Definition</a></li>
+                <li><a href="#" class="tablink" onclick="openTab(event, 'Causes')">Causes</a></li>
+                <li><a href="#" class="tablink" onclick="openTab(event, 'Effect')">Effect</a></li>
+                <li><a href="#" class="tablink" onclick="openTab(event, 'Solutions')">Solutions</a></li>
+                <li><a href="#" class="tablink" onclick="openTab(event, 'Feedback')">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Definition" class="tabcontent" style="display:block;">
+            <h2>Definition</h2>
+            <p>
+                Saving water means using water wisely and avoiding unnecessary waste. By adopting simple habits and efficient technologies, we can reduce our water use at home, school, and in our communities.
+            </p>
+            <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=800&q=80" alt="Glass of water symbolizing conservation" class="topic-img">
+        </section>
+
+        <section id="Causes" class="tabcontent">
+            <h2>Causes</h2>
+            <p>
+                Main challenges leading to water wastage include:
+            </p>
+            <ul>
+                <li>Leaking taps, pipes, or toilets wasting water unnoticed.</li>
+                <li>Overusing water for everyday activities.</li>
+                <li>Pollution making water unsafe to reuse.</li>
+                <li>Climate changes causing droughts and supply shortages.</li>
+            </ul>
+            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80" alt="Water wastage and pollution" class="topic-img">
+        </section>
+
+        <section id="Effect" class="tabcontent">
+            <h2>Effect</h2>
+            <p>
+                When water isn't saved:
+            </p>
+            <ul>
+                <li>Droughts can cause water shortages and restrictions.</li>
+                <li>People may need to travel far to collect water.</li>
+                <li>Plants, animals, and the entire environment suffer.</li>
+                <li>Lack of water can make it harder to keep places clean and healthy.</li>
+            </ul>
+            <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=800&q=80" alt="People affected by water scarcity" class="topic-img">
+        </section>
+
+        <section id="Solutions" class="tabcontent">
+            <h2>Solutions</h2>
+            <p>
+                Ways to help save water every day:
+            </p>
+            <ul>
+                <li>Fix leaks and turn off taps when not in use.</li>
+                <li>Take shorter showers and reuse water when possible.</li>
+                <li>Use water-saving devices at home and school.</li>
+                <li>Spread awareness on water conservation in your community!</li>
+            </ul>
+            <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=800&q=80" alt="Child washing hands at a water-saving tap" class="topic-img">
+        </section>
+
+        <section id="Feedback" class="tabcontent feedback-form">
+            <h2>Feedback</h2>
+            <form
+                action="https://formspree.io/f/mnnlajjg"
+                method="POST"
+                id="feedbackForm"
+            >
+                <label for="fname">Name:</label>
+                <input type="text" id="fname" name="name" required>
+
+                <label for="email">Your email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Saving Water Group | Created for assignment</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
